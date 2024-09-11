@@ -21,17 +21,16 @@ export default function ImageGrid({ data }) {
     >
       {data.map((item, index) => (
         <div
-          key={item.id}
-          className={`relative w-full ${spans[index]}`}
+          key={item.id + item.description}
+          className={`relative  ${spans[index]}`}
         >
           <Image
             src={`/images/${item.url}`}
             alt={item.description}
-            layout="responsive"
-            width={400} // Adjust as needed
-            height={300} // Adjust as needed
+            width={400}
+            height={300}
             quality={75}
-            className="object-cover"
+            className="object-contain"
           />
         </div>
       ))}
