@@ -1,4 +1,5 @@
 "use client";
+import Image from "next/image";
 import { useEffect, useState } from "react";
 
 export default function ImageGrid({ data }) {
@@ -16,15 +17,23 @@ export default function ImageGrid({ data }) {
 
   return (
     <div
-      className={`grid gap-[12px] grid-col md:grid-cols-3 lg:grid-cols-4 items-center `}
+      className={`grid gap-4 grid-cols-1 md:grid-cols-3 lg:grid-cols-4 items-center`}
     >
-      {data.map((item) => (
-        <img
+      {data.map((item, index) => (
+        <div
           key={item.id}
-          src={`/images/${item.url}`}
-          alt={item.description}
-          className={`w-full object-contain ${spans[item.id]}`}
-        />
+          className={`relative w-full ${spans[index]}`}
+        >
+          <Image
+            src={`/images/${item.url}`}
+            alt={item.description}
+            layout="responsive"
+            width={400} // Adjust as needed
+            height={300} // Adjust as needed
+            quality={75}
+            className="object-cover"
+          />
+        </div>
       ))}
     </div>
   );
