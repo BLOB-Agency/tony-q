@@ -3,7 +3,7 @@
 export default function Burger({isOpen, switchMenu}) {
  
   return (
-    <button onClick={switchMenu} className="flex flex-col md:hidden w-[50px] h-[36px] gap-[10px] justify-center items-center overflow-hidden">
+    <button onClick={switchMenu} className="flex flex-col lg:hidden w-[50px] h-[36px] gap-[10px] justify-center items-center overflow-hidden">
       {
         !isOpen ? (
           <>
