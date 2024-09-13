@@ -15,7 +15,7 @@ export default function Burger({isOpen, switchMenu}) {
           <>
             <span className="w-[40px] h-[2px] bg-black rounded rotate-45 self-center absolute transition-all duration-300"></span>
             <span className="w-[40px] h-[2px] bg-black rounded self-center transition-all absolute opacity-0"></span>
-            <span className="w-[40px] h-[2px] bg-black rounded -rotate-45 self-center absolutetransition-all duration-300"></span>
+            <span className="w-[40px] h-[2px] bg-black rounded -rotate-45 self-center absolute transition-all duration-300"></span>
           </>
         )
       }

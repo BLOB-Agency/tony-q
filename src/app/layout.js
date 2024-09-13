@@ -19,7 +19,7 @@ export default function RootLayout({ children }) {
           rel="stylesheet"
         />
       </head>
-      <body className={"py-[48px] px-[24px] md:px-[48px]"}>
+      <body className={"py-[48px] px-[24px] sm:px-[48px]"}>
         <Header />
         {children}
       </body>
