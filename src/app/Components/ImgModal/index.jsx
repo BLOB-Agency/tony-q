@@ -1,6 +1,5 @@
 import Image from "next/image";
 export default function ImgModal({ item, onClose }) {
-  console.log(item);
   return (
     <div className="fixed  bg-black bg-opacity-80 z-50 top-0 left-0 self-center w-full h-full flex flex-col gap-[12px] items-center justify-center transform transition-all duration-300 ease-in-out ">
       <div className="relative  h-full w-full flex  justify-center ">

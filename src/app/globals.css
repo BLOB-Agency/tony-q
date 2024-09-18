@@ -59,12 +59,22 @@
   }
 }
 
+@font-face {
+  font-family: "FuturaMedium";
+  src: url("/fonts/FUTURAMEDIUM.TTF") format("truetype");
+  src: url("/fonts/Futura-Medium.ttf") format('truetype');
+  font-style: normal;
+  font-weight: normal;
+}
+/* Remove this block */
+/* 
+* {
+  font-family: "FuturaMedium", Arial, Helvetica, sans-serif;
+}
+*/
+
 @layer base {
-  * {
-    @apply border-border;
-  }
   body {
-    @apply bg-background text-foreground;
-    /* overflow: hidden; */
+    @apply font-sans bg-background text-foreground;
   }
 }
