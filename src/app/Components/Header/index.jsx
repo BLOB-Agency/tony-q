@@ -21,7 +21,7 @@ export default function Header() {
   ];
 
   return (
-    <header className="flex flex-col gap-[120px] justify-between lg:fixed lg:left-0 lg:px-[48px] lg:w-[360px] lg:h-[100vh] lg:justify-start lg:bg-white">
+    <header className="flex flex-col gap-[120px] justify-between xl:fixed xl:left-0 lg:px-[48px] xl:w-[360px] xl:h-[100vh] xl:justify-start xl:bg-white">
       <div className="flex justify-between items-center">
         <Link href="/">
           <h1 className="text-[36px]">TONY QUERREC</h1>
@@ -30,7 +30,7 @@ export default function Header() {
       </div>
 
       {isOpen && (
-        <nav className="lg:hidden flex flex-col text-[30px] gap-[24px]">
+        <nav className="xl:hidden flex flex-col text-[30px] gap-[24px]">
           {navLinks.map((link) => (
             <Link
               key={link.href}

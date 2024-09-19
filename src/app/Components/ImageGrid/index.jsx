@@ -26,11 +26,12 @@ export default function ImageGrid({ data }) {
 
   return (
     <>
-      <div className="grid gap-4 grid-cols-1 sm:grid-cols-3 lg:grid-cols-4 items-center ">
+      <div className="grid gap-4 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 items-center ">
         {data.map((item, index) => (
           <div
             key={item.id + item.description}
-            className={`relative ${spans[index]} cursor-pointer`}
+            // className={`relative ${spans[index]} cursor-pointer`}
+            className={`relative cursor-pointer`}
             onClick={() => handleClick(item)}
           >
             <Image
@@ -39,7 +40,7 @@ export default function ImageGrid({ data }) {
               width={400}
               height={300}
               quality={75}
-              className="object-contain"
+              className="object-cover"
             />
           </div>
         ))}
